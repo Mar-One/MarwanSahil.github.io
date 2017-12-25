@@ -1,1 +1,669 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="beschrijving van de webpagina">
+    <link rel="icon" href="images/pizza3.png">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title> Le méditeranéen </title>
+
+    <style>
+        .slideshow {
+            display: none;
+        }
+
+        @media screen and (max-width: 600px) {
+            ul.navigatiebalk li.right,
+            ul.navigatiebalk li {
+                float: none;
+            }
+        }
+
+        p {
+            margin: 20px;
+            font-size: 1.5em;
+            letter-spacing: 2px;
+            text-decoration: none;
+            text-align: center;
+            color: black;
+
+
+        }
+
+        h2 {
+            font-size: 1.75em
+        }
+
+    </style>
+
+
+
+</head>
+
+<body>
+
+
+    <header>
+        <nav>
+            <ul class="navigatiebalk">
+                <li><a class="active" href="website_klant.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Q&A.html">Vragen ?</a></li>
+            </ul>
+            <div class="banner">
+                <img class="down" src="images/le%20m%C3%A9diteran%C3%A9en.jpg" alt="foto pizzeria" title="foto pizzeria" width="100%" height="300">
+            </div>
+
+        </nav>
+
+        <h2 class="titel">Welkom bij 'Le méditeranéen pizzeria-pasteria' !</h2>
+
+    </header>
+
+    <div class="inleiding">
+        <p><i> Bij ons kunt u genieten van de heerlijkste pizza's van de wijk gemaakt door enthousiaste pizzabakkers die vol met passie werken. Naast pizza's kunt u bij ons ook pasta bestellen of nog kiezen voor andere gerechten. Uiteindelijk maken we ook tiramisu en andere desserts die zeker uw smaakpapillen blij zullen maken </i></p>
+    </div>
+
+    <div class="pizzas" style="max-width:1500px">
+        <img class="slideshow" src="images/interieure2.jpg" alt="interieur2" style="width:50%" width="500" height="400">
+        <img class="slideshow" src="images/interieure.jpg" alt="interieur1" style="width:50%" width="500" height="400">
+        <img class="slideshow" src="images/pizza4.jpg" alt="pizza" style="width:50%" width="500" height="400">
+        <img class="slideshow" src="images/pizza5.jpg" alt="pizza" style="width:50%" width="500" height="400">
+    </div>
+
+    <script>
+        var tijd = 0;
+        duur()
+
+        function duur() {
+            var i;
+            var x = document.getElementsByClassName("slideshow");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tijd++;
+            if (tijd > x.length) {
+                tijd = 1
+            }
+            x[tijd - 1].style.display = "block";
+            setTimeout(duur, 3000);
+        }
+
+    </script>
+
+    <div class="footer">
+        Copyright &copy; Le méditeranéen Abou Daoud - 2017
+    </div>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="beschrijving van de webpagina">
+    <link rel="icon" href="images/pizza3.png">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title> contact - Le méditeranéen </title>
+
+    <style>
+        @media screen and (max-width: 600px) {
+            ul.navigatiebalk li.right,
+            ul.navigatiebalk li {
+                float: none;
+            }
+        }
+
+        p {
+            margin: 20px;
+            letter-spacing: 2px;
+            text-decoration: none;
+            text-align: center;
+            color: black;
+        }
+
+        h2 {
+            font-size: 1.75em
+        }
+
+    </style>
+
+
+
+</head>
+
+<body>
+
+
+    <header>
+        <nav>
+            <ul class="navigatiebalk">
+                <li><a class="active" href="website_klant.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Q&A.html">Vragen ?</a></li>
+            </ul>
+            <div class="banner">
+                <a href="website_klant.html"><img class="down" src="images/le%20m%C3%A9diteran%C3%A9en.jpg" alt="foto pizzeria" title="foto pizzeria" width="100%" height="300"></a>
+            </div>
+
+        </nav>
+        <h2 class="titel">Hoe kunt u ons bereiken of contacteren ?</h2>
+
+    </header>
+
+    <div class="sidebar">
+
+        <div class="openingsuren">
+            <h3>Openingsuren:</h3>
+            <p>Maandag: 12:00 - 14:30 en 18:00 - 24:00</p>
+            <p>Dinsdag: 12:00 - 14:30 en 18:00 - 24:00</p>
+            <p>Woensdag: gesloten</p>
+            <p>Donderdag: 12:00 - 14:30 en 18:00 - 24:00</p>
+            <p>Vrijdag: 18:00 - 24:00</p>
+            <p>Zaterdag: 12:00 - 14:30 en 18:00 - 24:00</p>
+            <p>Zondag: 12:00 - 14:30 en 18:00 - 24:00</p>
+
+        </div>
+        <div class="contactgegevens">
+            <h3>Telefoon: 02 521 50 34 </h3>
+            <h3>Adres: Bergensesteenweg 163 , 1070 Anderlecht</h3>
+        </div>
+
+        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FPizzeria-Pasteria-Le-M%25C3%25A9diterran%25C3%25A9en-Abou-Daoud-387470871393918%2F&tabs=timeline&width=300&height=200&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="300" height="200" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+    </div>
+
+    <div class="extra informatie">
+        <p style="font-size:1.5em;"><i> Wij proberen altijd om beschikbaar te zijn voor onze klanten en we zorgen ervoor dat de meeste vragen beantwoordt worden. Jullie kunnen ons ook volgen op facebook zodat jullie steeds op de hoogte zijn van eventuele veranderingen. Wij streven naar kwaliteit en naar de tevredenheid van onze klanten. Klant is baas ! </i></p>
+    </div>
+
+    <div class="map" style="width: 100% height: 100%">
+        <iframe width="800" height="800" src="https://www.mapsdirections.info/en/custom-google-maps/map.php?width=100%&height=200&hl=ru&q=chauss%C3%A9e%20de%20Mons%2C163+(Le%20M%C3%A9diteran%C3%A9en)&ie=UTF8&t=&z=17&iwloc=A&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" allowfullscreen></iframe>
+    </div><br />
+
+
+    <div class="footer">
+        Copyright &copy; Le méditeranéen Abou Daoud - 2017
+    </div>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="beschrijving van de webpagina">
+    <link rel="icon" href="images/pizza3.png">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title> menu - Le méditeranéen </title>
+
+    <style>
+        @media screen and (max-width: 600px) {
+            ul.navigatiebalk li.right,
+            ul.navigatiebalk li {
+                float: none;
+            }
+        }
+
+        p {
+            margin: 20px;
+            font-size: 1.5em;
+            letter-spacing: 2px;
+            text-decoration: none;
+            text-align: center;
+            color: black;
+        }
+
+        h2 {
+            font-size: 1.75em
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+    <header>
+        <nav>
+            <ul class="navigatiebalk">
+                <li><a class="active" href="website_klant.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Q&A.html">Vragen ?</a></li>
+            </ul>
+            <div class="banner">
+                <a href="website_klant.html"><img class="down" src="images/le%20m%C3%A9diteran%C3%A9en.jpg" alt="foto pizzeria" title="foto pizzeria" width="100%" height="300"></a>
+            </div>
+
+        </nav>
+        <h2 class="titel">Onze menu gemaakt voor u ! </h2>
+
+    </header>
+    <div class="menu">
+        <p><i>Hier vinden jullie een overzicht van alles wat er op het menu staat</i><p>
+         <a href="menukaart1.html"><img class="menu" src="images/menukaart1.jpg" alt="foto menu" title="foto menu" width="49%" ></a>
+        <a href="menukaart2.html"><img class="menu" src="images/menukaart2.jpg" alt="foto menu" title="foto menu" width="49%" ></a>
+        
+    </div>
+    
+    <div class="footer">
+        Copyright &copy; Le méditeranéen Abou Daoud - 2017
+    </div>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="beschrijving van de webpagina">
+    <link rel="icon" href="images/pizza3.png">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title> menu - Le méditeranéen </title>
+
+    <style>
+        @media screen and (max-width: 600px) {
+            ul.navigatiebalk li.right,
+            ul.navigatiebalk li {
+                float: none;
+            }
+        }
+
+        p {
+            margin: 20px;
+            letter-spacing: 2px;
+            text-decoration: none;
+            text-align: center;
+            color: black;
+        }
+
+        h2 {
+            font-size: 1.75em
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <a href="menu.html"><img class="menu" src="images/menukaart1.jpg" alt="foto menu" title="foto menu" ></a>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="beschrijving van de webpagina">
+    <link rel="icon" href="images/pizza3.png">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title> menu - Le méditeranéen </title>
+
+    <style>
+        @media screen and (max-width: 600px) {
+            ul.navigatiebalk li.right,
+            ul.navigatiebalk li {
+                float: none;
+            }
+        }
+
+        p {
+            margin: 20px;
+            letter-spacing: 2px;
+            text-decoration: none;
+            text-align: center;
+            color: black;
+        }
+
+        h2 {
+            font-size: 1.75em
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <a href="menu.html"><img class="menu" src="images/menukaart2.jpg" alt="foto menu" title="foto menu" ></a>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="beschrijving van de webpagina">
+    <link rel="icon" href="images/pizza3.png">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title> vragen - Le méditeranéen </title>
+
+    <style>
+        @media screen and (max-width: 600px) {
+            ul.navigatiebalk li.right,
+            ul.navigatiebalk li {
+                float: none;
+            }
+        }
+
+        p {
+            margin: 20px;
+            font-size: 1.5em;
+            letter-spacing: 2px;
+            text-decoration: none;
+            text-align: center;
+            color: black;
+        }
+
+        h2 {
+            font-size: 1.75em
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+    <header>
+        <nav>
+            <ul class="navigatiebalk">
+                <li><a class="active" href="website_klant.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Q&A.html">Vragen ?</a></li>
+            </ul>
+            <div class="banner">
+                <a href="website_klant.html"><img class="down" src="images/le%20m%C3%A9diteran%C3%A9en.jpg" alt="foto pizzeria" title="foto pizzeria" width="100%" height="300"></a>
+            </div>
+
+        </nav>
+        <h2 class="titel">Hier kunt u uw vraag stellen of uw mening geven. </h2>
+
+    </header>
+    <div class="vragen">
+        <p><i>Hier kan je een commentaar geven en/of uw vragen stellen.We doen alles om de vragen te beantwoorden. We kijken ook regelmatig naar de berichten dat we krijgen, want onze doel is om altijd te zorgen voor een betere service en een betere kwaliteit. Uw feedback is dus zeer geapprecieerd !</i></p>
+        </div>
+
+
+        <form action="/cgi-bin/mail.pl" method="post"></form>
+
+        <fieldset id="gegevens">
+            <legend>Gegevens</legend><br>
+
+            <label> Naam</label><br>
+            <input id=naam maxlength="90" size="30" type="text">
+            <br><br>
+
+            <label>Voornaam</label><br>
+            <input id=voornaam maxlength="90" size="30" type="text">
+            <br><br>
+
+            <label for=adres>Adres</label><br>
+            <input id=adres maxlength="90" size="30" type="text">
+            <br><br>
+
+            <label for=huisnummer>Huisnummer </label><br>
+            <input id=huisnummer maxlength="90" size="30" type="text">
+            <br><br>
+
+            <label for=stad>Stad</label><br>
+            <input id=stad maxlength="90" size="30" type="text">
+            <br><br>
+
+            <label for=postcode>Postcode</label><br>
+            <input id=postcode maxlength="90" size="30" type="text">
+            <br><br>
+
+            <label for=emailadres>E-mailadres</label><br>
+            <input id=emailadres maxlength="90" size="30" type="text">
+            <br><br> Geslacht:
+            <input id=man name="geslacht" type="radio" value="man">
+            <label for=man>Man</label>
+            <input id=vrouw name="geslacht" type="radio" value="vrouw">
+            <label for=vrouw>Vrouw</label>
+            <br><br> Aantal sterren op 5:
+            <select id="aantal-sterren-op-5" name="antwoord">
+        <option disabled>kies</option>
+        <option> 1 </option>
+        <option> 2 </option>
+        <option> 3 </option>    
+        <option> 4 </option>    
+        <option> 5 </option>    
+        </select>
+            <br><br> Onderwerp:
+            <input id="gerechten" name="onderwerp" type="checkbox">
+            <label for=gerechten>Gerechten</label>
+            <input id="service" name="onderwerp" type="checkbox">
+            <label for=service>Service</label>
+            <input id="bereikbaarheid" name="onderwerp" type="checkbox">
+            <label for=bereikbaarheid>Bereikbaarheid</label>
+            <input id="andere" name="onderwerp" type="checkbox">
+            <label for=andere>Andere</label>
+            <br><br> Wat wenst u te weten over het gekozen onderwerp? Wenst u uw mening daarover te geven ?<br>
+            <textarea id="invul" name="invul" cols="60" rows="6" placeholder="Ik zou graag willen weten... Ik vind dat...."></textarea>
+
+        </fieldset>
+
+        <fieldset id="klaar">
+            <legend>Formulier ingevuld</legend>
+            <input id="zend" type="submit" value="Verzenden">
+        </fieldset>
+
+        <div class="footer">
+            Copyright &copy; Le méditeranéen Abou Daoud - 2017
+        </div>
+</body>
+
+</html>
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #0F2527;
+    width: 100%;
+    top: 0;
+}
+
+li {
+    float: left;
+    border-right: 2px solid #ffa500;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 18px 18px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #ffa450;
+}
+
+
+li a:hover {
+    background-color: #ffa500;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: yellow;
+}
+
+
+img.slideshow {
+    position:static
+    margin: -7%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid orange;
+}
+body {
+    margin: 0;
+    
+
+}
+
+
+.sidebar {
+    width: 30%;
+    float: right;
+    background: ivory ;
+    min-height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px solid orange;
+    padding: 10px 10px 0 10px;
+}
+
+
+#slideshow {
+    position: relative;
+    height: 300px;
+    width: 450px;
+}
+
+#slideshow .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 8;
+    opacity: 0.0;
+}
+
+#slideshow div.active {
+    z-index: 10;
+    opacity: 1.0;
+}
+
+#slideshow div.last-active {
+    z-index: 9;
+}
+
+.footer {
+    clear: both;
+    background: black;
+    height: 40px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+fieldset{
+  border-color: Orange;
+  border-style: solid;
+  background-color: ivory;
+
+}
+input {
+    margin: 5px;
+    float: none;
+}
+
+textarea {
+    margin: 10px;
+    margin-right: 0px;
+}
+#gegevens {
+    margin: 80px;
+
+}
+
+#klaar {
+    margin: 80px;
+}
+/* Media queries voor mobiles */
+
+@media screen and (max-width:500px) {
+    
+    h2.titel {
+        margin-top: 5%;
+        font-size: 16px;
+    }
+    
+    .tekst {
+        margin: -30px;
+    }
+       
+    h2 {
+         font-size: 80%;
+    }
+    
+    div.openingsuren {
+        font-size: 12px;
+        margin-top: 30%;
+    }
+    
+    div.contactgegevens {
+        margin: 0px;
+        margin-top: 30%;
+
+    }
+      
+    #gegevens, #klaar {
+        margin-left: 0px;
+    }
+    
+}
+
+/* Media queries voor tablets */
+@media screen and (min-width:501px) and (max-width:999px) {
+
+   h2.titel {
+        margin-top: 5%;
+        font-size: 18px;
+    }
+    
+     .tekst {
+        margin: -35px;
+    }
+    
+    
+    div.contactgegevens {
+        margin: 0px;
+        margin-top: 20%;
+    }
+    
+    #gegevens, #klaar {
+        margin-left: 0px;
+    }
+    
+    
+    h2 {
+         font-size: 80%;
+    }
+}        
+
+
+
 
