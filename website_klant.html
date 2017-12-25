@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="beschrijving van de webpagina">
+    <link rel="icon" href="images/pizza3.png">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title> Le méditeranéen </title>
+
+    <style>
+        .slideshow {
+            display: none;
+        }
+
+        @media screen and (max-width: 600px) {
+            ul.navigatiebalk li.right,
+            ul.navigatiebalk li {
+                float: none;
+            }
+        }
+
+        p {
+            margin: 20px;
+            font-size: 1.5em;
+            letter-spacing: 2px;
+            text-decoration: none;
+            text-align: center;
+            color: black;
+
+
+        }
+
+        h2 {
+            font-size: 1.75em
+        }
+
+    </style>
+
+
+
+</head>
+
+<body>
+
+
+    <header>
+        <nav>
+            <ul class="navigatiebalk">
+                <li><a class="active" href="website_klant.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Q&A.html">Vragen ?</a></li>
+            </ul>
+            <div class="banner">
+                <img class="down" src="images/le%20m%C3%A9diteran%C3%A9en.jpg" alt="foto pizzeria" title="foto pizzeria" width="100%" height="300">
+            </div>
+
+        </nav>
+
+        <h2 class="titel">Welkom bij 'Le méditeranéen pizzeria-pasteria' !</h2>
+
+    </header>
+
+    <div class="inleiding">
+        <p><i> Bij ons kunt u genieten van de heerlijkste pizza's van de wijk gemaakt door enthousiaste pizzabakkers die vol met passie werken. Naast pizza's kunt u bij ons ook pasta bestellen of nog kiezen voor andere gerechten. Uiteindelijk maken we ook tiramisu en andere desserts die zeker uw smaakpapillen blij zullen maken </i></p>
+    </div>
+
+    <div class="pizzas" style="max-width:1500px">
+        <img class="slideshow" src="images/interieure2.jpg" alt="interieur2" style="width:50%" width="500" height="400">
+        <img class="slideshow" src="images/interieure.jpg" alt="interieur1" style="width:50%" width="500" height="400">
+        <img class="slideshow" src="images/pizza4.jpg" alt="pizza" style="width:50%" width="500" height="400">
+        <img class="slideshow" src="images/pizza5.jpg" alt="pizza" style="width:50%" width="500" height="400">
+    </div>
+
+    <script>
+        var tijd = 0;
+        duur()
+
+        function duur() {
+            var i;
+            var x = document.getElementsByClassName("slideshow");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tijd++;
+            if (tijd > x.length) {
+                tijd = 1
+            }
+            x[tijd - 1].style.display = "block";
+            setTimeout(duur, 3000);
+        }
+
+    </script>
+
+    <div class="footer">
+        Copyright &copy; Le méditeranéen Abou Daoud - 2017
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="beschrijving van de webpagina">
+    <link rel="icon" href="images/pizza3.png">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title> vragen - Le méditeranéen </title>
+
+    <style>
+        @media screen and (max-width: 600px) {
+            ul.navigatiebalk li.right,
+            ul.navigatiebalk li {
+                float: none;
+            }
+        }
+
+        p {
+            margin: 20px;
+            font-size: 1.5em;
+            letter-spacing: 2px;
+            text-decoration: none;
+            text-align: center;
+            color: black;
+        }
+
+        h2 {
+            font-size: 1.75em
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+    <header>
+        <nav>
+            <ul class="navigatiebalk">
+                <li><a class="active" href="website_klant.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Q&A.html">Vragen ?</a></li>
+            </ul>
+            <div class="banner">
+                <a href="website_klant.html"><img class="down" src="images/le%20m%C3%A9diteran%C3%A9en.jpg" alt="foto pizzeria" title="foto pizzeria" width="100%" height="300"></a>
+            </div>
+
+        </nav>
+        <h2 class="titel">Hier kunt u uw vraag stellen of uw mening geven. </h2>
+
+    </header>
+    <div class="vragen">
+        <p><i>Hier kan je een commentaar geven en/of uw vragen stellen.We doen alles om de vragen te beantwoorden. We kijken ook regelmatig naar de berichten dat we krijgen, want onze doel is om altijd te zorgen voor een betere service en een betere kwaliteit. Uw feedback is dus zeer geapprecieerd !</i></p>
+        </div>
+
+
+        <form action="/cgi-bin/mail.pl" method="post"></form>
+
+        <fieldset id="gegevens">
+            <legend>Gegevens</legend><br>
+
+            <label> Naam</label><br>
+            <input id=naam maxlength="90" size="30" type="text">
+            <br><br>
+
+            <label>Voornaam</label><br>
+            <input id=voornaam maxlength="90" size="30" type="text">
+            <br><br>
+
+            <label for=adres>Adres</label><br>
+            <input id=adres maxlength="90" size="30" type="text">
+            <br><br>
+
+            <label for=huisnummer>Huisnummer </label><br>
+            <input id=huisnummer maxlength="90" size="30" type="text">
+            <br><br>
+
+            <label for=stad>Stad</label><br>
+            <input id=stad maxlength="90" size="30" type="text">
+            <br><br>
+
+            <label for=postcode>Postcode</label><br>
+            <input id=postcode maxlength="90" size="30" type="text">
+            <br><br>
+
+            <label for=emailadres>E-mailadres</label><br>
+            <input id=emailadres maxlength="90" size="30" type="text">
+            <br><br> Geslacht:
+            <input id=man name="geslacht" type="radio" value="man">
+            <label for=man>Man</label>
+            <input id=vrouw name="geslacht" type="radio" value="vrouw">
+            <label for=vrouw>Vrouw</label>
+            <br><br> Aantal sterren op 5:
+            <select id="aantal-sterren-op-5" name="antwoord">
+        <option disabled>kies</option>
+        <option> 1 </option>
+        <option> 2 </option>
+        <option> 3 </option>    
+        <option> 4 </option>    
+        <option> 5 </option>    
+        </select>
+            <br><br> Onderwerp:
+            <input id="gerechten" name="onderwerp" type="checkbox">
+            <label for=gerechten>Gerechten</label>
+            <input id="service" name="onderwerp" type="checkbox">
+            <label for=service>Service</label>
+            <input id="bereikbaarheid" name="onderwerp" type="checkbox">
+            <label for=bereikbaarheid>Bereikbaarheid</label>
+            <input id="andere" name="onderwerp" type="checkbox">
+            <label for=andere>Andere</label>
+            <br><br> Wat wenst u te weten over het gekozen onderwerp? Wenst u uw mening daarover te geven ?<br>
+            <textarea id="invul" name="invul" cols="60" rows="6" placeholder="Ik zou graag willen weten... Ik vind dat...."></textarea>
+
+        </fieldset>
+
+        <fieldset id="klaar">
+            <legend>Formulier ingevuld</legend>
+            <input id="zend" type="submit" value="Verzenden">
+        </fieldset>
+
+        <div class="footer">
+            Copyright &copy; Le méditeranéen Abou Daoud - 2017
+        </div>
+</body>
+
+</html>
